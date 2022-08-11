@@ -1,9 +1,9 @@
 $(document).ready(function(){
 $('.owl-carousel').owlCarousel({
     loop: false,
-  margin: 10,
-  nav: true,
-  navText: ["←","→"],
+    margin: 10,
+    nav: true,
+    navText: ["←","→"],
     dots:false,
     responsive:{ 
         0:{
