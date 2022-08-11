@@ -1,0 +1,106 @@
+.carousel-1 .owl-dots,
+.carousel-1 .owl-nav {
+    text-align: right;
+}
+.carousel-indicators .active {
+    background-color: purple !important;
+    opacity: 2;
+  }
+  .carousel-indicators [data-bs-target] {
+    content: "" !important;
+    display: block !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    background-clip: padding-box;
+    background-color: white;
+    border: 2px purple solid;
+  }
+.carousel-indicators [data-bs-target] {
+    border:0px;
+    color: white !important;
+}
+.owl-carousel .owl-nav .owl-prev {
+    font-size: 45px !important;
+    position: absolute;
+    top: 25%;
+    margin-left: -44px;
+    background-color: transparent !important;
+    color: rgb(255, 255, 255) !important; 
+}
+
+.owl-carousel .owl-nav .owl-next {
+    font-size: 45px !important;
+    position: absolute;
+    top: 25%;
+    right: -45px;
+    background-color: transparent !important;
+    color: rgb(255, 255, 255) !important;
+
+}
+/* for crousel side arrows */
+.disabled{
+    display: none;
+  }
+  .fa-face-smile:before, .fa-smile:before {
+    background-color: black;
+    border-radius: 50%;
+  }
+  .fa-face-meh:before, .fa-meh:before {
+    background-color: black;
+    border-radius: 50%;
+  }
+  .fa-add:before, .fa-plus:before {
+    background-color: #ffde59;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    padding: 4px;
+  }
+  .fa-face-sad-tear:before, .fa-sad-tear:before {
+    background-color: black;
+    border-radius: 50%;
+  }
+/* For side navbar */
+
+  /* animation */
+  @keyframes collapse {
+    0% {
+      z-index: 100;
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-300px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      z-index: 100;
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

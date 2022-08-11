@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <title>GFA Films</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<div class="hidden fixed top-0 left-0 h-full w-full z-[50] bg-[#000000b3] closeNav overlay"></div>
+    
+<nav class="bg-black">
+    <div class="flex justify-between">
+        <div class="flex">
+                <div class="p-2">
+                    <button class="bg-[#545454] p-1 text-black border-0 hover:shadow-none hover:no-underline focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline group" id="openNav" type="button">
+                        <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                    <div class="max-w-[300px] w-[85%] overflow-y-auto h-full fixed z-[100] top-0 left-0 bg-black -translate-x-[380px]" id="mySidenav">
+                        <div class="mt-10">
+                            <button class="bg-fuchsia-500 hover:bg-fuchsia-600 text-black font-bold py-2 px-4 rounded-lg mx-auto text-xl closeNav closeBtn">Close Menu</button>
+                            <ul class="mt-4 items-center justify-center">
+                            <li class="relative"><a class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-white cursor-pointer hover:text-fuchsia-500 font-bold" href="index.html">Home</a></li>
+                            <li class="relative"><a class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-white cursor-pointer hover:text-fuchsia-500 font-bold" href="About us.html">About Us</a></li>
+                            <li class="relative"><a class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-white cursor-pointer hover:text-fuchsia-500 font-bold" data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">Genres
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                                </svg>
+                                </a>
+                                <ul class="relative accordion-collapse collapse" id="collapseSidenavEx1" aria-labelledby="sidenavEx1" data-bs-parent="#sidenavExample">
+                                    <div class="grid grid-rows-6 grid-flow-col gap-4">
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-xs py-2 pl-6 text-gray-400  hover:text-gray-200" >Action</a>
+                                            </li>
+                                        </div>
+                                        <div> 
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200" >Comedy</a>
+                                            </li>
+                                            </div>
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200" >Family</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200" >Horror</a>
+                                            </li>
+                                        </div>
+                                        <div><li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200" >Mystery</a>
+                                            </li>
+                                        </div>
+                                        <div> <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Sci-Fi</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Adventure</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Drama</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                                <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Fantasy</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Music</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Romance</a>
+                                            </li>
+                                        </div>
+                                        <div>
+                                                <li class="relative">
+                                            <a href="" class="flex items-center text-sm py-2 pl-6 text-gray-400  hover:text-gray-200">Thriller</a>
+                                            </li>
+                                        </div>
+                                        </div>
+                                    </ul>
+                            </li>
+                            <li class="relative">
+                                <a class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-white cursor-pointer hover:text-fuchsia-500 font-bold" data-mdb-ripple="true" data-mdb-ripple-color="dark" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx2" aria-expanded="true" aria-controls="collapseSidenavEx1">Languages
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                                </svg>
+                                </a>
+                                <ul class="relative accordion-collapse collapse" id="collapseSidenavEx2" aria-labelledby="sidenavEx3" data-bs-parent="#sidenavExample">
+                                    <li class="relative">
+                                        <a href="" class="flex items-center text-sm py-4 px-6 text-gray-400  hover:text-gray-200" >Creole</a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="" class="flex items-center text-sm py-4 px-6 text-gray-400  hover:text-gray-200" >Creole</a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="" class="flex items-center text-sm py-4 px-6 text-gray-400  hover:text-gray-200" >French</a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="" class="flex items-center text-sm py-4 px-6 text-gray-400  hover:text-gray-200" >Russian</a>
+                                    </li>
+                                    <li class="relative">
+                                        <a href="" class="flex items-center text-sm py-4 px-6 text-gray-400  hover:text-gray-200">Spanish</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="relative"><a class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-white cursor-pointer hover:text-fuchsia-500 font-bold">Movies</a></li>
+                            <li class="relative"><a class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-white cursor-pointer hover:text-fuchsia-500 font-bold" href="My List.html">My List</a></li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="mb-2 w-40">
+                    <a class="flex text-gray-900 hover:text-gray-900 focus:text-gray-900" href="#">
+                            <img class="h-[60px] mt-3 mx-auto" src="/images/logoo.png"
+                            alt="" loading="lazy" />
+                    </a>
+                    <a href="" class="text-white tracking-wide ">Iris strata Production</a>
+                </div>
+        </div>
+            <div>
+                <div class="py-2">
+                    <ul class="navbar-nav flex list-style-none mt-2">
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10 " href="/html/index.html">Main Menu</a></li>
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10" href="/html/Documentary.html">Documentary</a></li>
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10" href="/html/International.html">International</a></li>
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10" href="/html/Alphabetical Listing.html">Alphabetical Listing</a></li>
+                    </ul>
+                </div>
+                <div class="py-1 flex">
+                    <ul class="navbar-nav flex list-style-none ml-12">
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10" href="/html/Women-Created.html">Women-Created</a></li>
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10" href="/html/GFA Films.html">GFA Films</a></li>
+                        <li class="nav-item"><a class="nav-link text-white text-[14px] hover:text-fuchsia-500 mr-10" href="/html/Last Chance.html">Last Chance</a></li>
+                    </ul>
+                    <div class="input-group flex flex-wrap items-stretch rounded ml-20 mb-3">
+                        <input type="search" class="form-control relative flex-auto min-w-0 block px-2 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                            placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                        <span class="input-group-text flex items-center px-2 text-white text-center whitespace-nowrap rounded cursor-pointer" id="basic-addon2">
+                            <svg class="DocSearch-Search-Icon w-6 h-6" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex relative dropdown">
+                <a class="dropdown-toggle flex" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full h-11 w-11 mr-2 mt-7" alt="" loading="lazy" />
+                </a>
+                <div class="dropdown-menu min-w-max w-44 absolute left-auto right-0 top-0 hidden bg-white text-base z-50 py-2 list-none text-left rounded-lg shadow-lg bg-clip-padding border-none -inset-1">
+                    <div class="flex justify-center flex-col items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full h-10 w-10" alt="" loading="lazy" />
+                    <p>Your Name</p>
+                    <a href="" class="text-blue-600">My Profile</a>
+                    </div>
+                    <hr>
+                    <div class="flex items-center p-3">
+                        <i class="fa-solid fa-circle-question mx-3 text-xl"></i>
+                        <a href="">Help</a>
+                    </div>
+                    <hr>
+                    <div class="flex items-center p-3">
+                        <i class="fa-solid fa-arrow-right-from-bracket mx-3 text-xl"></i>
+                        <a href="">Logout</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</nav>
+<div class="bg-[url('/images/Main.jpg')] pb-2">
+    <div class="w-full grid grid-cols-2">
+        <div class="">
+        <img src="/images/GFA Page (Banner w_video placeholder).jpg" class="w-full h-full" alt="..." />
+        </div>
+        <div class="">
+            <video autoplay loop muted class="">
+                <source src="/video.mp4" type="video/mp4"/>
+              </video>
+        </div>
+    </div>
+    <div class="container-fluid pt-2 bg-opacity-100">
+        <div class="w-[85%] mx-auto pb-10">
+            <div class="container mx-auto">
+                <h1 class="lg:text-2xl md:text-lg text-sm mb-4 mt-3 text-white">GFA Films</h1>
+                <div class="grid grid-cols-4 container mx-auto gap-x-4 gap-y-16">
+                    <div class="item h-40 relative group hover:border-2 border-[#dda450]"><img src="/images/Thumbnail (New Release 2).png" class="w-full h-full rounded-lg" alt="">
+                        <div class="absolute -top-5 left-72 w-80 bg-[#dda550bd] p-4 z-1000 text-center text-base rounded-[50px] hidden group-hover:block">
+                            <h1 class="font-bold">2022/76 Minutes<br>Romantic Comedy</h1>
+                                <p class="text-base">A janitor pretends to be a
+                                    psychologist in order to impress a
+                                    sophisticated woman, but gets
+                                    trapped in his lie when he agrees to
+                                    treat her sister who needs a private
+                                    investigator more than a therapist.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="item h-40"><img src="/images/Thumbnail (New Release 3).png" class="w-full h-full rounded-lg" alt="">
+                    </div>
+                    <div class="item h-40"><img src="/images/Thumbnail (New Release 4).png" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Thumbnail (Last Chance 4).png" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Thumbnail (Last Chance 4).png" class="w-full h-full rounded-lg " alt=""></div>
+                    <div class="item h-40"><img src="/images/Player PhD Page (Banner).jpg" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Thumbnail (Last Chance 2).png" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Thumbnail (Last Chance 1).png" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/My List Page (Banner no title).jpg" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Alphabetical Page (Banner no title).jpg" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Thumbnail (International 2).png" class="w-full h-full rounded-lg" alt=""></div>
+                    <div class="item h-40"><img src="/images/Thumbnail (International 4).png" class="w-full h-full rounded-lg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+      
+</div>
+<footer>
+    <div class="bg-black w-full h-52 px-5 py-7">
+        <div class="float-right">
+            <div class="bg-[#141414] border-2 border-white w-60 p-2 text-center">
+                <a href="" class="text-white mr-4 text-2xl p-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="text-white mr-4 text-2xl p-1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="text-white mr-4 text-2xl p-1"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="text-white mr-4 text-2xl p-1"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="mt-5">
+                <ul class="text-center">
+                    <li><a href="/html/About us.html" class="text-gray-300">About Us</a></li>
+                    <li><a href="" class="text-gray-300">Privacy Policy</a></li>
+                    <li><a href="" class="text-gray-300">Contact Us</a></li>
+                    <li><a href="" class="text-gray-300">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
